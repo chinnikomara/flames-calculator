@@ -1,0 +1,33 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(231, 103, 48);
+            }
+            h1{
+                color: rgb(246, 240, 240);
+                background-color: rgb(39, 4, 69);
+                padding: 5px;
+                font-style:italic;
+            }
+            h2{
+                color: rgb(19, 19, 28);
+                font-style: oblique;
+            }
+            h3{
+                color:rgb(37, 21, 1);
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <center><h1>Result..!</h1></center>
+        <br>
+        <center><h2>{{dest1.out}}</h2></center><br><br>
+        <center><img src="{{baseUrl}}/{{dest1.img}}"></center><br><br><br><br><br>
+        <bottom><h3>@ Designed by Chinni Komara</h3></bottom>
+    </body>
+</html>

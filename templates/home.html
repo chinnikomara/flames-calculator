@@ -1,0 +1,35 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<head>
+    <style>
+        h1{
+            color: white;
+            background-color: red;
+            padding: 5px;
+            font-style:oblique;
+        }
+        h3{
+            font-style: italic;
+        }
+        body{
+            background-color: rgb(53, 69, 104);
+            background-image: "{{baseUrl}}/{{dest1.bg}}";
+        }
+        input{
+            border: 3px solid lightgray;
+            border-radius: 8px;
+        }
+        </style>
+    
+</head>
+<body>
+    <center><h1>Let's have a fun with flames</h1></center>
+    <br><br>
+    <form action="result" method="GET">
+        <center><h3>King  :</h3><input type="text" name="name1" placeholder="Enter name..."></center><br>
+        <center><h3>Queen :</h3><input type="text" name="name2" placeholder="Enter name..."></center><br><br>
+        <center><input type="Submit"></center>
+    </form>
+</body>
+</html>
